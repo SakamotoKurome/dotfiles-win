@@ -1,0 +1,46 @@
+version = "3.5.0"
+lastUpdated = "2026-01-01T05:31:03.382Z"
+
+[general]
+preferredLang = "zh-CN"
+templateLang = "zh-CN"
+aiOutputLang = "zh-CN"
+currentTool = "claude-code"
+
+[claudeCode]
+enabled = true
+outputStyles = [ "engineer-professional", "nekomata-engineer", "laowang-engineer", "ojousama-engineer" ]
+defaultOutputStyle = "engineer-professional"
+installType = "global"
+currentProfile = "anyrouter"
+
+[claudeCode.profiles.996]
+name = "996"
+authType = "api_key"
+apiKey = "sk-Qr8VmxtMLyCUftxZrmbw8dIf5nMDDtLLE7euJyZvk5eE73OE"
+baseUrl = "https://529961.com/"
+primaryModel = "claude-sonnet-4-5-20250929"
+
+[claudeCode.profiles.runanytime]
+name = "runanytime"
+authType = "api_key"
+apiKey = "sk-PMFiZYHTHL80NmTAHpqMn6758HDlRLHjCuw1gUIR2NlcjCrg"
+baseUrl = "https://runanytime.hxi.me/"
+primaryModel = "claude-sonnet-4-5-20250929-thinking"
+
+[claudeCode.profiles.ccr-proxy]
+name = "CCR Proxy"
+authType = "ccr_proxy"
+apiKey = "sk-zcf-x-ccr"
+baseUrl = "http://127.0.0.1:3456"
+
+[claudeCode.profiles.anyrouter]
+name = "anyrouter"
+authType = "api_key"
+apiKey = "sk-yeVJ3HOl2pxQFJ1wTsoupF9vbg6u77wG5pSNYsw3I9gRCMkO"
+baseUrl = "https://a-ocnfniawgw.cn-shanghai.fcapp.run"
+primaryModel = "claude-sonnet-4-5-20250929"
+
+[codex]
+enabled = false
+systemPromptStyle = "engineer-professional"

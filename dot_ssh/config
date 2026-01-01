@@ -1,0 +1,89 @@
+## GitHub ##
+
+Host github.com
+  HostName ssh.github.com
+  Port 443
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+# Local Network
+
+Host uln
+  HostName 192.168.1.233
+  Port 3896
+  User kurome
+  IdentityFile ~/.ssh/id_rsa
+
+# Zerotier
+
+Host uzt
+  HostName 192.168.193.186
+  Port 3896
+  User kurome
+  IdentityFile ~/.ssh/id_rsa
+
+# Tailscale
+Host uts
+  HostName 100.96.242.118
+  Port 3896
+  User kurome
+  IdentityFile ~/.ssh/id_rsa
+
+# Cloudflare Tunnel
+
+Host uct
+  Hostname ssh.sasamekikoto.free.hr
+  User kurome
+  IdentityFile ~/.ssh/id_rsa
+  ProxyCommand cloudflared access ssh --hostname %h
+
+# sakamotokurome.free.hr
+
+Host ume
+  HostName ssh.g7n3.me
+  Port 3896
+  User kurome
+  IdentityFile ~/.ssh/id_rsa
+
+# Ubuntu VM
+
+Host  u-vm
+  HostName 20.20.20.128
+  Port 22
+  User ubuntu
+  IdentityFile ~/.ssh/id_rsa
+
+## Serv00
+
+Host serv00
+  HostName s3.serv00.com
+  Port 22
+  User ara
+  IdentityFile ~/.ssh/id_rsa
+
+## ZHOME
+Host zhome
+  HostName 192.168.18.1
+  KexAlgorithms +diffie-hellman-group1-sha1
+  HostKeyAlgorithms +ssh-rsa
+  User root
+  Port 1022
+
+# macbook
+
+Host mzt
+  HostName 192.168.193.140
+  Port 22
+  User kurome
+  IdentityFile ~/.ssh/id_rsa
+
+# geovis-test
+Host geovis-test
+  HostName 10.1.108.219
+  Port 22
+  User root
+  IdentityFile ~/.ssh/id_rsa
+
+ServerAliveInterval 60
+ServerAliveCountMax 10
+AddKeysToAgent yes
